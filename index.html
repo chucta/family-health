@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สุขภาพของคุณแม่</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Noto+Sans+Lao:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">♥</span>
+      <div class="brand-text">
+        <h1 id="appTitle">สุขภาพของคุณแม่</h1>
+        <p id="subtitle">ผลตรวจสุขภาพย้อนหลัง</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <label class="member-picker" id="memberPickerWrap" hidden>
+        <span id="memberLabel">สมาชิก</span>
+        <select id="memberSelect"></select>
+      </label>
+
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="th" class="active">ไทย</button>
+        <button type="button" data-lang="lo">ລາວ</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+
+      <button type="button" class="info-toggle" id="infoToggle" aria-expanded="false" aria-controls="metaPanel">
+        <span aria-hidden="true">ⓘ</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- collapsed metadata: latest check / count / updated -->
+  <div class="meta-panel" id="metaPanel" hidden>
+    <div class="meta-row">
+      <span class="meta-label" id="lblLastCheck">ตรวจล่าสุด</span>
+      <strong id="lastCheckDate">—</strong>
+    </div>
+    <div class="meta-row">
+      <span class="meta-label" id="lblRecordCount">ครั้งที่ตรวจ</span>
+      <strong id="recordCount">—</strong>
+    </div>
+    <div class="meta-row">
+      <span class="meta-label" id="lblUpdated">อัปเดตล่าสุด</span>
+      <strong id="updatedAt">—</strong>
+    </div>
+  </div>
+</header>
+
+<div id="demoBanner" class="demo-banner" hidden>
+  <strong id="demoBadge">ข้อมูลตัวอย่าง</strong>
+  <span id="demoNote"></span>
+</div>
+
+<main id="app">
+
+  <!-- 1) Trends first — last 5 check-ups -->
+  <section class="card">
+    <h2 id="hTrends">แนวโน้มตามช่วงเวลา</h2>
+    <p class="section-sub" id="trendSub"></p>
+    <div id="trendGrid" class="trend-grid"></div>
+  </section>
+
+  <!-- 2) Overview: 3 latest side by side, swipe left for older -->
+  <section class="card">
+    <h2 id="hOverview">ภาพรวม 3 ครั้งล่าสุด</h2>
+    <p class="section-sub" id="overviewSub"></p>
+    <div class="overview-scroller" id="overviewScroller">
+      <div class="overview-track" id="overviewGrid"></div>
+    </div>
+  </section>
+
+  <!-- 3) Lipid profile -->
+  <section class="card">
+    <h2 id="hLipid">ไขมันในเลือด</h2>
+    <div id="lipidGrid" class="metric-grid"></div>
+  </section>
+
+  <!-- 4) Diabetes -->
+  <section class="card">
+    <h2 id="hDiabetes">เบาหวาน / น้ำตาลในเลือด</h2>
+    <div id="diabetesGrid" class="metric-grid"></div>
+  </section>
+
+  <!-- 5) Vitals & body -->
+  <section class="card">
+    <h2 id="hVitals">ร่างกายและความดัน</h2>
+    <div id="vitalsGrid" class="metric-grid"></div>
+  </section>
+
+  <!-- 6) Flagged -->
+  <section class="card flagged-card">
+    <h2 id="hFlagged">ค่าที่ควรจับตา</h2>
+    <div id="flaggedList" class="flagged-list"></div>
+  </section>
+
+  <p class="footnote" id="footnote"></p>
+
+</main>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

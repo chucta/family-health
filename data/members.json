@@ -1,0 +1,159 @@
+{
+  "generatedAt": "2026-11-27T02:38:38.914Z",
+  "isDemo": true,
+  "members": [
+    {
+      "member": {
+        "id": "mom",
+        "name": {
+          "th": "แม่",
+          "lo": "ແມ່",
+          "en": "Mom"
+        },
+        "birth_year": null,
+        "sex": "female",
+        "note": "ผลตรวจจริงยังไม่มี — ไฟล์นี้เป็นตัวอย่างเพื่อให้เห็นรูปแบบข้อมูล"
+      },
+      "isDemo": true,
+      "recordCount": 5,
+      "lastDate": "2026-11-10",
+      "records": [
+        {
+          "id": "demo-2023-04-18",
+          "date": "2023-04-18",
+          "lab": "ตัวอย่าง (ไม่ใช่ผลจริง)",
+          "fasting": true,
+          "note": "DEMO DATA — ตัวเลขสมมติ",
+          "source": null,
+          "values": {
+            "weight": 59.4,
+            "bmi": 24,
+            "waist": 85,
+            "sbp": 132,
+            "dbp": 80,
+            "glucose_fasting": 104,
+            "hba1c": 5.9,
+            "tcho": 212,
+            "ldl": 138,
+            "hdl": 45,
+            "tgl": 182,
+            "ast": 27,
+            "alt": 31,
+            "creatinine": 0.81,
+            "egfr": 73,
+            "urate": 5,
+            "hemoglobin": 12.5
+          }
+        },
+        {
+          "id": "demo-2024-11-20",
+          "date": "2024-11-20",
+          "lab": "ตัวอย่าง (ไม่ใช่ผลจริง)",
+          "fasting": true,
+          "note": "DEMO DATA — ตัวเลขสมมติ",
+          "source": null,
+          "values": {
+            "weight": 58,
+            "bmi": 23.4,
+            "waist": 82,
+            "sbp": 128,
+            "dbp": 78,
+            "glucose_fasting": 102,
+            "hba1c": 5.9,
+            "tcho": 205,
+            "ldl": 132,
+            "hdl": 48,
+            "tgl": 165,
+            "ast": 26,
+            "alt": 30,
+            "creatinine": 0.8,
+            "egfr": 72,
+            "urate": 4.9,
+            "hemoglobin": 12.6
+          }
+        },
+        {
+          "id": "demo-2025-05-14",
+          "date": "2025-05-14",
+          "lab": "ตัวอย่าง (ไม่ใช่ผลจริง)",
+          "fasting": true,
+          "note": "DEMO DATA — ตัวเลขสมมติ",
+          "source": null,
+          "values": {
+            "weight": 57.2,
+            "bmi": 23.1,
+            "waist": 81,
+            "sbp": 124,
+            "dbp": 76,
+            "glucose_fasting": 98,
+            "hba1c": 5.8,
+            "tcho": 198,
+            "ldl": 124,
+            "hdl": 51,
+            "tgl": 152,
+            "ast": 24,
+            "alt": 27,
+            "creatinine": 0.79,
+            "egfr": 74,
+            "urate": 4.6,
+            "hemoglobin": 12.8
+          }
+        },
+        {
+          "id": "demo-2026-05-09",
+          "date": "2026-05-09",
+          "lab": "ตัวอย่าง (ไม่ใช่ผลจริง)",
+          "fasting": true,
+          "note": "DEMO DATA — ตัวเลขสมมติ",
+          "source": null,
+          "values": {
+            "weight": 57.9,
+            "bmi": 23.4,
+            "waist": 82,
+            "sbp": 130,
+            "dbp": 80,
+            "glucose_fasting": 104,
+            "hba1c": 6,
+            "tcho": 207,
+            "ldl": 135,
+            "hdl": 49,
+            "tgl": 166,
+            "ast": 27,
+            "alt": 30,
+            "creatinine": 0.8,
+            "egfr": 72,
+            "urate": 4.9,
+            "hemoglobin": 12.6
+          }
+        },
+        {
+          "id": "demo-2026-11-10",
+          "date": "2026-11-10",
+          "lab": "ตัวอย่าง (ไม่ใช่ผลจริง)",
+          "fasting": true,
+          "note": "DEMO DATA — ตัวเลขสมมติ",
+          "source": null,
+          "values": {
+            "weight": 58.6,
+            "bmi": 23.7,
+            "waist": 84,
+            "sbp": 134,
+            "dbp": 82,
+            "glucose_fasting": 108,
+            "hba1c": 6.1,
+            "tcho": 214,
+            "ldl": 143,
+            "hdl": 47,
+            "tgl": 178,
+            "ast": 29,
+            "alt": 33,
+            "creatinine": 0.82,
+            "egfr": 70,
+            "urate": 5.1,
+            "hemoglobin": 12.4
+          }
+        }
+      ]
+    }
+  ]
+}
